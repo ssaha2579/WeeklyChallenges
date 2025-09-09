@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 
 namespace ChallengesWithTestsMark8
 {
     public class ChallengesSet02
     {
-        public bool CharacterIsALetter(char c)
+        public bool CharacterIsALetter(char c); 
         {
-            throw new NotImplementedException();
+            return Char.IsLetter(c); 
         }
+        
+        
+       
 
         public bool CountOfElementsIsEven(string[] vals)
         {
