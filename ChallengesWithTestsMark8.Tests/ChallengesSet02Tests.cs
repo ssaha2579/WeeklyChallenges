@@ -24,7 +24,7 @@ namespace ChallengesWithTestsMark8.Tests
                 Assert.True(uppercaseActual);
             }
         }
-
+ 
         [Fact]
         public void CharacterIsNotALetter()
         {
