@@ -111,7 +111,7 @@ namespace ChallengesWithTestsMark8
                 }
             }
 
-            return numbers.Where(x=>x % 2 == 0).Sum();
+            return evenSum;
         }
 
         public bool IsSumOdd(List<int> numbers)
@@ -126,11 +126,10 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-            
-
+           
             long count = 0;
 
-            for (long i = number; i >= 0; i--)
+            for (long i = number - 1; i > 0; i--)
             {
                 if ((i % 2) != 0)
                 {
