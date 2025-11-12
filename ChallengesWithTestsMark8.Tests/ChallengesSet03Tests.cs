@@ -21,7 +21,7 @@ namespace ChallengesWithTestsMark8.Tests
         [InlineData(new bool[] { false, true, false }, true)]
         [InlineData(new bool[] { false, false }, true)]
         [InlineData(new bool[] { false }, true)]
-        //[InlineData(null, false)] // Assumption: Array will not be null
+        [InlineData(null, false)] // Assumption: Array will not be null
         public void ArrayContainsAFalse(bool[] values, bool expected)
         {
             // Arrange
@@ -35,15 +35,15 @@ namespace ChallengesWithTestsMark8.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { 1, 2, 3, 4, 5 }, true)]
+        [InlineData(new int[] { 1, 2, 3, 4, 5 }, true)] 
         [InlineData(new int[] { -1, -2, -3, -4, -5 }, true)]
-        [InlineData(new int[] { 1, 2, 2, 3, 4 }, false)]
-        [InlineData(new int[] { 1, -2, -2, 3, -4 }, false)]
+        [InlineData(new int[] { 1, 2, 2, 3, 4 }, false)] 
+        [InlineData(new int[] { 1, -2, -2, 3, -4 }, false)] 
         [InlineData(new int[] { 1, -2, 2, 3, 4 }, false)]
         [InlineData(new int[] { 1, 3, 5, 7, 9 }, true)]
         [InlineData(new int[] { 1, 3, 5, 8 }, true)]
-        [InlineData(new int[] { 10, 10, 10, 10 }, false)]
-        [InlineData(new int[] { 0, 1, 0 }, true)]
+        [InlineData(new int[] { 10, 10, 10, 10 }, false)] 
+        [InlineData(new int[] { 0, 1, 0 }, true)] 
         [InlineData(new int[] { }, false)]
         [InlineData(null, false)]
         public void IsSumOfOddsOdd(IEnumerable<int> numbers, bool expected)
