@@ -8,7 +8,7 @@ namespace ChallengesWithTestsMark8
     {
         public bool AreTwoNumbersTheSame(int num1, int num2)
         {
-            if(num1 == num2)
+            if (num1 == num2)
             {
                 return true;
             }
@@ -41,24 +41,21 @@ namespace ChallengesWithTestsMark8
         }
 
         public long Multiply(long factor1, long factor2)
-        { 
-            return factor1 * factor2; 
+        {
+            return factor1 * factor2;
         }
 
         public string GetGreeting(string nameOfPerson)
         {
-
             string name = nameOfPerson;
-            if( nameOfPerson == "")
+            if (nameOfPerson == "")
             {
-                return "Hello!"; 
+                return "Hello!";
             }
             else
             {
                 return $"Hello, {nameOfPerson}!";
             }
-                    
-
         }
 
         public string GetHey()

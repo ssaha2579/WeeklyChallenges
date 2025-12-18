@@ -35,15 +35,15 @@ namespace ChallengesWithTestsMark8.Tests
         }
 
         [Theory]
-        [InlineData(new int[] { 1, 2, 3, 4, 5 }, true)] 
+        [InlineData(new int[] { 1, 2, 3, 4, 5 }, true)]
         [InlineData(new int[] { -1, -2, -3, -4, -5 }, true)]
-        [InlineData(new int[] { 1, 2, 2, 3, 4 }, false)] 
-        [InlineData(new int[] { 1, -2, -2, 3, -4 }, false)] 
+        [InlineData(new int[] { 1, 2, 2, 3, 4 }, false)]
+        [InlineData(new int[] { 1, -2, -2, 3, -4 }, false)]
         [InlineData(new int[] { 1, -2, 2, 3, 4 }, false)]
         [InlineData(new int[] { 1, 3, 5, 7, 9 }, true)]
         [InlineData(new int[] { 1, 3, 5, 8 }, true)]
-        [InlineData(new int[] { 10, 10, 10, 10 }, false)] 
-        [InlineData(new int[] { 0, 1, 0 }, true)] 
+        [InlineData(new int[] { 10, 10, 10, 10 }, false)]
+        [InlineData(new int[] { 0, 1, 0 }, true)]
         [InlineData(new int[] { }, false)]
         [InlineData(null, false)]
         public void IsSumOfOddsOdd(IEnumerable<int> numbers, bool expected)
@@ -192,7 +192,8 @@ namespace ChallengesWithTestsMark8.Tests
         {
             // Arrange
             ChallengesSet03 challenger = new ChallengesSet03();
-            int[] odds = {
+            int[] odds =
+            {
                 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25,
                 27, 29, 31, 33, 35, 37, 39, 41, 43, 45, 47, 49,
                 51, 53, 55, 57, 59, 61, 63, 65, 67, 69, 71, 73,

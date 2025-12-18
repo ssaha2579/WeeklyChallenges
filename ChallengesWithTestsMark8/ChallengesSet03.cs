@@ -12,8 +12,8 @@ namespace ChallengesWithTestsMark8
         public bool ArrayContainsAFalse(bool[] vals)
         {
             if (vals == null)
-            {  
-                return false; 
+            {
+                return false;
             }
 
             foreach (var item in vals)
@@ -23,6 +23,7 @@ namespace ChallengesWithTestsMark8
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -30,7 +31,7 @@ namespace ChallengesWithTestsMark8
         {
             if (numbers == null)
             {
-                return false; 
+                return false;
             }
 
             int sum = 0;
@@ -58,14 +59,14 @@ namespace ChallengesWithTestsMark8
                 return false;
 
             return password.Any(char.IsUpper)
-                && password.Any(char.IsLower)
-                && password.Any(char.IsDigit);
+                   && password.Any(char.IsLower)
+                   && password.Any(char.IsDigit);
         }
 
 
         public char GetFirstLetterOfString(string val)
         {
-            return val[0]; 
+            return val[0];
         }
 
         public char GetLastLetterOfString(string val)
@@ -96,6 +97,7 @@ namespace ChallengesWithTestsMark8
                     index++;
                 }
             }
+
             return myArray;
         }
 
@@ -106,6 +108,5 @@ namespace ChallengesWithTestsMark8
                 words[i] = words[i].ToUpper();
             }
         }
-      
     }
 }

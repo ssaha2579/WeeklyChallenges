@@ -1,5 +1,4 @@
-﻿
-namespace ChallengesWithTestsMark8
+﻿namespace ChallengesWithTestsMark8
 {
     public class Business
     {

@@ -13,15 +13,15 @@ namespace ChallengesWithTestsMark8
         {
             string alphabet = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-            for(int i = 0; i<alphabet.Length ; i++) 
+            for (int i = 0; i < alphabet.Length; i++)
             {
-                if (alphabet[i] == c) 
+                if (alphabet[i] == c)
                     return true;
             }
 
             return false;
-    
-                // return char.IsLetter(c);
+
+            // return char.IsLetter(c);
         }
 
         public bool CountOfElementsIsEven(string[] vals)
@@ -62,12 +62,12 @@ namespace ChallengesWithTestsMark8
 
         public double SumOfMinAndMax(IEnumerable<double> numbers)
         {
-            
             if (numbers == null || numbers.Count() == 0)
             {
                 return 0;
             }
-            return numbers.Min() + numbers.Max(); 
+
+            return numbers.Min() + numbers.Max();
         }
 
         public int GetLengthOfShortestString(string str1, string str2)
@@ -92,7 +92,7 @@ namespace ChallengesWithTestsMark8
             }
 
             return sum;
-         } 
+        }
 
         public int SumEvens(int[] numbers)
         {
@@ -126,7 +126,6 @@ namespace ChallengesWithTestsMark8
 
         public long CountOfPositiveOddsBelowNumber(long number)
         {
-           
             long count = 0;
 
             for (long i = number - 1; i > 0; i--)
@@ -136,7 +135,8 @@ namespace ChallengesWithTestsMark8
                     count++;
                 }
             }
-         return count;   
+
+            return count;
         }
     }
 }
